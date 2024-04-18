@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background: url(../imgs/hero_br.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.nav_left {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.links {
+    display: flex;
+    gap: 30px;
+    margin-left: 50px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+}
+
+.links select {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 15px;
+    outline: none;
+}
+
+select option {
+    background-color: black;
+    color: white;
+}
+
+.loginbtn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+.hero_info {
+    width: 550px;
+    color: white;
+    padding-top: 140px;
+    padding-bottom: 190px;
+}
+
+.hero_info h1 {
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero_info p {
+    line-height: 26px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.hero_info button {
+    padding: 6px 22px;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+.shop {
+    padding: 30px 0px;
+}
+
+.section_title {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.269);
+    padding: 10px 0px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.search {
+    background-color: #F4F4F4;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.search input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.products {
+    border: 1px solid rgba(0, 0, 0, 0.269);
+    padding: 30px 15px;
+}
+
+.btns {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.btns button {
+    margin: 0px 8px;
+    padding: 8px 16px;
+    background-color: transparent;
+    border: none;
+}
+
+.btns button:hover {
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(90deg, #243961, #101828);
+    border-radius: 6px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.cards img {
+    width: 400px;
+}
+
+.product_info .more {
+    text-align: right;
+}
+
+.more a {
+    color: #101828;
+    text-decoration: none;
+    font-weight: 500px;
+}
+
+footer {
+    background-color: #101828;
+    color: white;
+    padding: 50px 0px;
+}
+
+footer .first {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    align-items: center;
+}
+
+.first h6 {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.first p {
+    color: rgba(255, 255, 255, 0.557);
+}
+
+.first input {
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 20px;
+    outline: none;
+}
+
+.first button {
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.first button:hover {
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+
+.second {
+    display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.447);
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+footer .wap {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+
+.wap h5 {
+    line-height: 25px;
+}
+
+footer .paw {
+    width: 290px;
+    margin-right: 50px;
+}
+
+.second img {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.second p {
+    font-size: 15px;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.447);
+}
+
+.second span {
+    color: rgba(255, 255, 255, 0.548);
+}
+
+footer .third {
+    display: flex;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.548);
+}
+
+.third h3 {
+    display: flex;
+    gap: 20px;
+}
+.menubtn{
+    display: none;
+}
+.section_title>img{
+    display: none;
+}
+
+
+
+@media (max-width: 447px){
+    .container{
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    .links, .loginbtn{
+        display: none;
+    }
+    .menubtn{
+        display: block;
+    }
+    .hero_info{
+        width: 90% !important;
+        padding-top: 80px !important;
+        padding-bottom: 80px;
+    }
+    header {
+        background: url(../imgs/hero_bg2.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .hero_info h1{
+        font-size: 28px;
+    }
+    .hero_info p{
+        line-height: 15px;
+        font-weight: 100;
+    }
+    .cards{
+        flex-wrap: wrap;
+    }
+    .cards img{
+        width: 100%;
+    }
+    .search{
+        display: none;
+    }
+    .btns{
+        display: flex;
+        justify-content: space-between;
+    }
+    .btns button {
+        margin: 0px 3px;
+        padding: 4px 10px;
+        background-color: transparent;
+        border: none;
+        font-size: 14px;
+    }
+    .title h2{
+        font-size: 20px;
+    }
+    .section_title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .section_title>img{
+        display: block;
+    }
+    .more{
+        display: none;
+    }
+    footer .first{
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    .first h6{
+        font-size: 20px;
+        font-weight: 100;
+        margin-bottom: 5px;
+    }
+    .first p{
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+    footer input{
+        width: 100%;
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+        padding-right: 100px !important;
+        margin-bottom: 20px;
+    }
+    footer button{
+        width: 100%;
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+    }
+    footer .second{
+        flex-wrap: wrap;
+    }
+    footer .wap{
+        flex-wrap: wrap;
+    }
+    .wap .box{
+        width: 130px !important;
+        font-size: 20px;
+    }
+    .wap h5{
+        line-height: 30px !important;
+    }
+    .paw img{
+        width: 170px;
+    }
+    .paw p{
+        letter-spacing: 2px;
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+    footer .wap{
+        gap: 30px;
+    }
+    footer .third{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+}
